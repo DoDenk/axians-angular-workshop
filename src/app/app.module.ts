@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { CalculateForMeComponent } from './building-components/calculate-for-me/calculate-for-me.component';
 
 @NgModule({
 	declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
 		WorkshopPageTwoComponent,
 		WorkshopAgendaComponent,
 		OverviewComponent,
-		SimpleComponentComponent
+		SimpleComponentComponent,
+		CalculateForMeComponent
 	],
 	imports: [ BrowserModule, BrowserAnimationsModule, FormsModule, AppRoutingModule, CalendarModule ],
 	providers: [],

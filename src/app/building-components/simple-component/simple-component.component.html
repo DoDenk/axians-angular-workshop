@@ -5,8 +5,9 @@
     <p-calendar [(ngModel)]="myStartTime" [timeOnly]="true" [readonlyInput]="true"></p-calendar><br />
     <label>Bitte geben Sie die Arbeitszeit an</label><br />
     <input type="number" pInputNumber [(ngModel)]="workTime" /><br />
-    <button (click)="calculateWorkTimeLeft()">Berechnen</button><br />
-    <b *ngIf="workTimeLeft && workTimeLeft > 0">Sie müssen noch {{ getWorktimeAsDate()| number : '1.2-2' }}
+    <app-calculate-for-me [myStartTime]="myStartTime" [workTime]="workTime"
+      (worktimeResult)="workTimeValueChanged($event)"></app-calculate-for-me><br />
+    <b *ngIf="workTimeLeft && workTimeLeft > 0">Sie müssen noch {{ workTimeLeft | number : '1.2-2' }}
       Stunden arbeiten.</b>
     <b *ngIf="workTimeLeft && workTimeLeft!=null && workTimeLeft <= 0">Sie müssen heute nicht mehr
       arbeiten.</b>
