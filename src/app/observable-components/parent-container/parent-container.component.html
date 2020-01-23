@@ -1,4 +1,10 @@
+<button pButton type="button" label="Papa setzt alles zurück" class="ui-button-rounded"
+  (click)="resetCounter()"></button>
 <div class="flex-container">
-  <div class="flex-item"><app-knows-everything (counterChanged)="counterChanged($event)"></app-knows-everything></div>
-  <div class="flex-item"><app-knows-nothing [counter]="counter"></app-knows-nothing></div>
+  <div class="flex-item">
+    <app-knows-everything></app-knows-everything>
+  </div>
+  <div class="flex-item">
+    <app-knows-nothing></app-knows-nothing>
+  </div>
 </div>

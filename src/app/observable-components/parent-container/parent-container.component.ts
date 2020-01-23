@@ -1,3 +1,4 @@
+import { CalculateService } from './../../../services/calculate.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,13 +7,11 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './parent-container.component.css' ]
 })
 export class ParentContainerComponent implements OnInit {
-	public counter: number;
-
-	constructor() {}
+	constructor(private calculateService: CalculateService) {}
 
 	ngOnInit() {}
 
-	public counterChanged(newCounter: number): void {
-		this.counter = newCounter;
+	public resetCounter(): void {
+		this.calculateService.setCounter(0);
 	}
 }
