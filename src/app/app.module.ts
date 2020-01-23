@@ -12,6 +12,9 @@ import { AppComponent } from './app.component';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { CalculateForMeComponent } from './building-components/calculate-for-me/calculate-for-me.component';
+import { ParentContainerComponent } from './observable-components/parent-container/parent-container.component';
+import { KnowsEverythingComponent } from './observable-components/knows-everything/knows-everything.component';
+import { KnowsNothingComponent } from './observable-components/knows-nothing/knows-nothing.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +24,10 @@ import { CalculateForMeComponent } from './building-components/calculate-for-me/
 		WorkshopAgendaComponent,
 		OverviewComponent,
 		SimpleComponentComponent,
-		CalculateForMeComponent
+		CalculateForMeComponent,
+		ParentContainerComponent,
+		KnowsEverythingComponent,
+		KnowsNothingComponent
 	],
 	imports: [ BrowserModule, BrowserAnimationsModule, FormsModule, AppRoutingModule, CalendarModule ],
 	providers: [],
