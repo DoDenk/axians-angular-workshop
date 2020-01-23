@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WorkshopAgendaComponent } from './WorkshopAgenda.component';
+import { WorkshopAgendaComponent } from './workshop-agenda.component';
 
 describe('WorkshopAgenda', () => {
   let component: WorkshopAgendaComponent;

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-workshop-agenda',
-  templateUrl: './WorkshopAgenda.component.html',
-  styleUrls: ['./WorkshopAgenda.component.css']
+  templateUrl: './workshop-agenda.component.html',
+  styleUrls: ['./workshop-agenda.component.css']
 })
 export class WorkshopAgendaComponent implements OnInit {
 
