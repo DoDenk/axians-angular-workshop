@@ -1,4 +1,10 @@
-# AxiansAngularWorkshop2
+# Vorwort
+
+Wilkommen zum Angular Workshop 2020
+Dieses GitHub Verzeichnis dient als Hilfe für alle die am Workshop teilgenommen haben.
+
+
+# AxiansAngularWorkshop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
