@@ -1,3 +1,4 @@
+import { CalculateService } from './../services/calculate.service';
 import { SimpleComponentComponent } from './building-components/simple-component/simple-component.component';
 import { OverviewComponent } from './exercise/overview/overview.component';
 import { WorkshopAgendaComponent } from './interactive-routing/workshop-agenda/workshop-agenda.component';
