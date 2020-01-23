@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-const VALUE_HOUR_TO_MILLISCOUND = 3600000;
 
 @Component({
 	selector: 'app-simple-component',
@@ -15,14 +14,7 @@ export class SimpleComponentComponent implements OnInit {
 
 	ngOnInit() {}
 
-	public calculateWorkTimeLeft(): void {
-		const millSecsWorkTime = this.workTime * VALUE_HOUR_TO_MILLISCOUND;
-		const currentDate = new Date();
-		const timeWorkEnds = new Date(this.myStartTime.getTime()  + millSecsWorkTime);
-		this.workTimeLeft = timeWorkEnds.getTime() - currentDate.getTime();
-	}
-
-	public getWorktimeAsDate(): number {
-		return this.workTimeLeft / VALUE_HOUR_TO_MILLISCOUND;
+  public workTimeValueChanged(newValue:number): void {
+		this.workTimeLeft = newValue;
 	}
 }
