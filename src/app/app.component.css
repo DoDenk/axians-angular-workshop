@@ -1,0 +1,9 @@
+.flex-container{
+  display: flex;
+}
+
+.flex-item{
+  width: 25vw;
+  max-width: 40vw;
+  padding: 2rem;
+}
