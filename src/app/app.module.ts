@@ -1,3 +1,4 @@
+import { OverviewComponent } from './exercise/overview/overview.component';
 import { WorkshopAgendaComponent } from './interactive-routing/workshop-agenda/workshop-agenda.component';
 import { WorkshopPageTwoComponent } from './interactive-routing/workshop-page-two/workshop-page-two.component';
 import { WorkshopPageOneComponent } from './interactive-routing/workshop-page-one/workshop-page-one.component';
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     WorkshopPageOneComponent,
     WorkshopPageTwoComponent,
-    WorkshopAgendaComponent
+    WorkshopAgendaComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
